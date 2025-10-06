@@ -1,0 +1,69 @@
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+/* Gradient background */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(180deg, #0d0b26 0%, #141447 40%, #1f1f80 70%, #2525a8 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   /* disable scrolling */
+}
+
+/* Center everything vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  height: 100%;
+}
+
+/* Logo */
+.logo {
+  width: 300px; /* adjust as needed */
+}
+
+/* Program box */
+.overlay {
+  text-align: center;
+  background: rgba(0,0,0,0.45);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+
+.buttons a {
+  display: block;
+  margin: 10px auto;
+  padding: 15px 25px;
+  background: #9b9806;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.2em;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  width: 220px;
+  opacity: 0.95;
+}
+
+.buttons a:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .logo { width: 65%; }
+  h1 { font-size: 1.9em; }
+  .buttons a { width: 90vw; max-width: 300px; }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>عرض الخطة</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .download-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff6600;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .download-btn:hover {
+      background: #e65c00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace IMAGE_NAME.png dynamically -->
+  <img src="3.png" alt="الخطة">
+
+  <!-- Download button -->
+  <a href="IMAGE_NAME.png" download class="download-btn">تحميل الصورة</a>
+</body>
+</html>
